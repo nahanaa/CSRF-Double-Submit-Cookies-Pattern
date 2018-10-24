@@ -27,25 +27,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-    <link href="./style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     
 </head>
+<style>
 
-<body>
+body {  background-color: #efefef;
+        background-image: url("img.jpg");
+
+} 
+</style>
+<body >
+
     <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="inner cover">
-                    <h1 class="cover-heading">Login</h1>
                     <form class="form-signin" action="index.php" method="POST">
-                        <input type="text" name="username" id="username">
-                        <input type="text" name="password" id="password">
-                        <button type="submit" name="login">Login</button>
+                  
+                    <div class="container">
+
+                    <div class="col-lg-4 col-lg-offset-4"  style="margin-top:16%">
+                        <label for="username">User Name:</label>
+                        <input class="form-control" type="text" name="username" id="username" placeholder="User Name"> <br>
+
+                        <label for="password">Password:</label>
+                        <input class="form-control" type ="password" name="password" id="password" placeholder="Password">
+
+                        <br>
+                        <button class="btn btn-primary center-block btn-lg" type="submit" name="login">Login</button> 
+                        
+                    </div> 
+
+                    
+                   
+
                     </form>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 

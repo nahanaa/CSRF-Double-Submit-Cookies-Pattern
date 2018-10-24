@@ -21,10 +21,18 @@
     if(isset($_POST['csrfSubmit'])){
 
         if($_COOKIE["csrf_token"] == $_POST['token']){
-            echo "Success";
+            echo '<div>
+            <h1 style="margin-left: 31%; margin-top: 9%;"> Your Transaction is successful! <a href="./index.php">Return Back</a></h1>
+           </div>
+           <div>';
+           
         }
         else{
-            echo "Error";
+            echo '<div>
+            <h1 style="margin-left: 31%; margin-top: 9%;"> Your Transaction is unsuccessful! <a href="./index.php">Return Back</a></h1>
+           </div>
+           <div>';
+           
         }
     }
 
