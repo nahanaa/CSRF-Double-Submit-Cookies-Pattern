@@ -4,7 +4,7 @@
         $username=$_POST['username'];
         $password=$_POST['password'];
 
-        if($username=='Nahanaa' && $password=='Nahanaa'){
+        if($username=='Admin' && $password=='Admin123'){
             
             session_regenerate_id();
             setcookie("csrf_session",session_id());
